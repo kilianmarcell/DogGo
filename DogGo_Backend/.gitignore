@@ -1,0 +1,58 @@
+# Dependencies
+/node_modules
+/vendor
+
+# Environment variables
+.env
+.env.backup
+.env.testing
+.env.local
+
+# Lock files
+package-lock.json
+yarn.lock
+composer.lock
+
+# Build outputs
+/public/hot
+/public/storage
+/public/css/app.css
+/public/js/app.js
+/public/mix-manifest.json
+
+# Cache and storage
+/storage/*.key
+/bootstrap/cache/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*
+/storage/logs/*
+
+# Test results
+.phpunit.result.cache
+/coverage/
+
+# Laravel specific
+docker-compose.override.yml
+Homestead.json
+Homestead.yaml
+auth.json
+
+# Logs
+npm-debug.log
+yarn-error.log
+*.log
+
+# Editor directories and files
+/.idea
+/.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+.DS_Store
+Thumbs.db

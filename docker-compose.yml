@@ -1,0 +1,50 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: doggo_mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: doggo
+      MYSQL_USER: doggo
+      MYSQL_PASSWORD: doggo
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./DogGo_Backend
+    container_name: doggo_backend
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      DB_CONNECTION: mysql
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_DATABASE: doggo
+      DB_USERNAME: doggo
+      DB_PASSWORD: doggo
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./DogGo_Backend:/var/www
+
+  frontend:
+    build:
+      context: ./DogGo_Web
+    container_name: doggo_frontend
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./DogGo_Web:/app
+
+volumes:
+  db_data:

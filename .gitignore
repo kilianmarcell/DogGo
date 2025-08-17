@@ -1,0 +1,80 @@
+# Root-level DogGo Project .gitignore
+
+# Dependencies
+**/node_modules/
+**/vendor/
+
+# Environment variables
+**/.env
+**/.env.*
+!**/.env.example
+
+# Lock files (auto-generated)
+**/package-lock.json
+**/yarn.lock
+**/pnpm-lock.yaml
+
+# Build outputs
+**/dist/
+**/build/
+**/public/hot
+**/public/storage
+**/public/css/
+**/public/js/
+**/public/mix-manifest.json
+
+# Logs
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/pnpm-debug.log*
+**/*.log
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# Laravel specific
+**/storage/*.key
+**/.phpunit.result.cache
+**/Homestead.json
+**/Homestead.yaml
+**/docker-compose.override.yml
+
+# Cache directories
+**/bootstrap/cache/
+**/storage/framework/cache/
+**/storage/framework/sessions/
+**/storage/framework/testing/
+**/storage/framework/views/
+**/storage/logs/
+
+# Database
+*.sqlite
+*.sqlite3
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
+*.tmp
+*.temp

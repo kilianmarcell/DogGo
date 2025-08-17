@@ -1,0 +1,89 @@
+:root {
+  --primary-color: #86C232;
+  --primary-dark: #61892F;
+  --primary-light: #9AD149;
+  --primary-darker: #5A7A2A;
+  --primary-lighter: #6B9A32;
+
+  --bg-dark-1: rgba(34, 38, 41, 0.95);
+  --bg-dark-2: rgba(52, 58, 64, 0.9);
+  --bg-dark-3: rgba(34, 38, 41, 0.8);
+  --bg-overlay: rgba(255, 255, 255, 0.05);
+  --bg-hover: rgba(134, 194, 50, 0.1);
+  --bg-error: rgba(220, 53, 69, 0.1);
+
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.9);
+  --text-muted: rgba(255, 255, 255, 0.6);
+  --text-error: #dc3545;
+  --text-success: #28a745;
+
+  --border-primary: rgba(134, 194, 50, 0.2);
+  --border-primary-hover: rgba(134, 194, 50, 0.4);
+  --border-error: rgba(220, 53, 69, 0.3);
+  --border-muted: rgba(255, 255, 255, 0.1);
+
+  --shadow-sm: 0 2px 8px rgba(134, 194, 50, 0.3);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 15px 35px rgba(134, 194, 50, 0.2);
+  --shadow-glow: 0 0 20px rgba(134, 194, 50, 0.2);
+  --shadow-glow-hover: 0 0 40px rgba(134, 194, 50, 0.4);
+
+  --blur-sm: blur(10px);
+  --blur-md: blur(15px);
+  --blur-lg: blur(20px);
+
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-xl: 15px;
+
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.4s ease;
+  --transition-cubic: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+  --z-dropdown: 100;
+  --z-sticky: 500;
+  --z-fixed: 1000;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+
+  --font-xs: 0.75rem;
+  --font-sm: 0.85rem;
+  --font-base: 1rem;
+  --font-lg: 1.1rem;
+  --font-xl: 1.2rem;
+  --font-2xl: 1.5rem;
+  --font-3xl: 1.875rem;
+  --font-4xl: 2.25rem;
+  --font-5xl: 3rem;
+
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+
+  --gradient-primary: linear-gradient(45deg, var(--primary-color), var(--primary-dark), var(--primary-color));
+  --gradient-bg: linear-gradient(-45deg, var(--primary-color), var(--primary-dark), #4CAF50, #2E7D32);
+  --gradient-glass: linear-gradient(135deg, var(--bg-dark-1), var(--bg-dark-2));
+  --gradient-shine: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  --gradient-text: linear-gradient(45deg, var(--primary-color), var(--primary-dark), var(--primary-color));
+
+  /* Additional card and component variables */
+  --card-bg: rgba(255, 255, 255, 0.95);
+  --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}

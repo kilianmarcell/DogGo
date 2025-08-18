@@ -36,6 +36,7 @@ services:
       - "8000:8000"
     volumes:
       - ./DogGo_Backend:/var/www
+      - backend_vendor:/var/www/vendor
 
   frontend:
     build:
@@ -45,6 +46,9 @@ services:
       - "8080:8080"
     volumes:
       - ./DogGo_Web:/app
+      - frontend_node_modules:/app/node_modules
 
 volumes:
   db_data:
+  backend_vendor:
+  frontend_node_modules:

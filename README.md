@@ -30,3 +30,4 @@ Ez a következő szolgáltatásokat indítja el:
 	- DB_DATABASE=doggo
 	- DB_USERNAME=doggo
 	- DB_PASSWORD=doggo
+-(A .env.example fájlban ezek a beállítások szerepelnek.)
